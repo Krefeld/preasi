@@ -38,7 +38,7 @@ public class Mif {
         System.out.println("linke Hälfte " + arr_left + "\nrechte Hälfte " + arr_right);
         
         if(Collections.max(arr_left) == Collections.max((arr))){
-            System.out.println("Stragie fehlgeschlagen, weil das beste Element schon unter den 37% war");
+            System.out.println("Strategie fehlgeschlagen, weil das beste Element schon unter den 37% war");
             return;
         }
         best = Collections.max((arr_left));
@@ -54,6 +54,6 @@ public class Mif {
         if(Collections.max(arr) == best)
             System.out.println("Strategie ist aufgegangen, bestes Element " + best + "  am Index: " + arr.indexOf(best));
         else
-            System.out.println("Stragie fehlgeschlagen, besseres Element gefunden: " + best + "  das beste ist aber: " + Collections.max(arr) + " am Index: " + arr.indexOf(Collections.max(arr)));
+            System.out.println("Strategie fehlgeschlagen, besseres Element gefunden: " + best + "  das beste ist aber: " + Collections.max(arr) + " am Index: " + arr.indexOf(Collections.max(arr)));
     }
 }
