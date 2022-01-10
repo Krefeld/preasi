@@ -31,8 +31,8 @@ public class Mif {
         List<Integer> arr_right = new ArrayList<>();
         System.out.println(arr);
         int best = 0;
-        double boarder_p = 0.37;
-        int boarder = (int)(boarder_p * Grenze);
+        double b_p = 0.37;
+        int boarder = (int)(b_p * Grenze);
         arr_left = arr.subList(0, boarder+1);
         arr_right = arr.subList(boarder + 1, arr.size());
         System.out.println("linke Hälfte " + arr_left + "\nrechte Hälfte " + arr_right);
@@ -44,7 +44,7 @@ public class Mif {
         best = Collections.max((arr_left));
         System.out.println("bis jetzt bestes gefundene: " + Collections.max(arr_left) + "  am Index: " + arr.indexOf(Collections.max(arr_left)));
 
-        for(int i = boarder +1; i < arr.size(); ++i){
+        for(int i = b +1; i < arr.size(); ++i){
             if(arr.get(i) > best){
                 best = arr.get(i);
                 break;
